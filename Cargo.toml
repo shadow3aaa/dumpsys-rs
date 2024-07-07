@@ -1,0 +1,9 @@
+[package]
+name = "dumpsys-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+binder = { package = "binder_ndk", git = "https://github.com/shadow3aaa/binder_rs" }
+os_pipe = "1.2.0"
+thiserror = "1.0.61"
