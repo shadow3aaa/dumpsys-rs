@@ -25,4 +25,4 @@ let result: Result<String, Error> = Dumpsys::new("SurfaceFlinger")
 
 ## License
 
-`dumpsys-rs` is licensed under the [`GPLv3 License`](LICENSE).
+`dumpsys-rs` is licensed under [`GNU General Public License v3.0 only`](LICENSE).
