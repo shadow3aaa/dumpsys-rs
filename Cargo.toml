@@ -7,6 +7,6 @@ readme = "README.md"
 repository = "https://github.com/shadow3aaa/dumpsys-rs"
 
 [dependencies]
-binder = { package = "binder_ndk", git = "https://github.com/shadow3aaa/binder_rs" }
+binder = { version = "0.2.0", package = "binder_ndk" }
 os_pipe = "1.2.0"
 thiserror = "1.0.61"
