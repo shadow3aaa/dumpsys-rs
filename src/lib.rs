@@ -1,3 +1,4 @@
+#![cfg(target_os = "android")]
 mod error;
 
 use std::{io::Read, thread};
@@ -5,12 +6,10 @@ use std::{io::Read, thread};
 use binder::{binder_impl::IBinderInternal, get_service, SpIBinder};
 
 /// The main entry of this crate
-#[cfg(target_os = "android")]
 pub struct Dumpsys {
     service: SpIBinder,
 }
 
-#[cfg(target_os = "android")]
 impl Dumpsys {
     /// Retrieve an existing service and save it for dump, blocking for a few seconds if it doesn't yet exist.
     ///
