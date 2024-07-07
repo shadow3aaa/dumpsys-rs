@@ -2,6 +2,9 @@
 name = "dumpsys-rs"
 version = "0.1.0"
 edition = "2021"
+authors = ["shadow3"]
+readme = "README.md"
+repository = "https://github.com/shadow3aaa/dumpsys-rs"
 
 [dependencies]
 binder = { package = "binder_ndk", git = "https://github.com/shadow3aaa/binder_rs" }
