@@ -10,5 +10,5 @@ license = "GPL-3.0"
 
 [dependencies]
 binder = { git = "https://github.com/shadow3aaa/binder_rs", package = "binder_ndk" }
-os_pipe = "1.2.0"
-thiserror = "1.0.61"
+os_pipe = "1.2.1"
+thiserror = "2.0.11"

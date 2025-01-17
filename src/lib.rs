@@ -25,12 +25,12 @@ impl Dumpsys {
     ///
     /// Dumpsys::new("SurfaceFlinger");
     /// ```
-    pub fn new<S>(service_name: S) -> Option<Self>
+    pub fn new<S>(service_name: S) -> Self
     where
         S: AsRef<str>,
     {
-        let service = get_service(service_name.as_ref())?;
-        Some(Self { service })
+        let service = get_service(service_name.as_ref()).unwrap();
+        Self { service }
     }
 
     /// # Example

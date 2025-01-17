@@ -8,5 +8,5 @@ pub enum DumpError {
     #[error("IO Error")]
     IO(#[from] io::Error),
     #[error("Dump error")]
-    DumpStatus(#[from] StatusCode)
+    DumpStatus(#[from] StatusCode),
 }
